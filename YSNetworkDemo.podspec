@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
     This is a high level network framework.
                        DESC
 
-  s.homepage         = 'https://github.com/yangha1/YSNetworkDemo'
+  s.homepage         = 'https://github.com/yangha1/YSNetwork'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = {
     'yangha1' => 'maomaoerfff@hotmail.com'
   }
-  s.source           = { :git => 'https://github.com/yangha1/YSNetworkDemo.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yangha1/YSNetwork.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
