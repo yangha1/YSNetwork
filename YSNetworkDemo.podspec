@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.source_files = 'YSNetwork/YSNetwork/Classes/*.{h,m}'
-  s.resource_bundles = {
-    'YSNetworkDemo' => ['YSNetwork/YSNetwork/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #  'YSNetworkDemo' => ['YSNetwork/YSNetwork/Assets/*.png']
+  #}
   
   s.frameworks = 'UIKit'
   s.dependency 'AFNetworking', '~> 3.0.1'

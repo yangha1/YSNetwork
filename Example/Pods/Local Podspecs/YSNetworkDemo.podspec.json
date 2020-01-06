@@ -19,11 +19,6 @@
     "ios": "8.0"
   },
   "source_files": "YSNetwork/YSNetwork/Classes/*.{h,m}",
-  "resource_bundles": {
-    "YSNetworkDemo": [
-      "YSNetwork/YSNetwork/Assets/*.png"
-    ]
-  },
   "frameworks": "UIKit",
   "dependencies": {
     "AFNetworking": [

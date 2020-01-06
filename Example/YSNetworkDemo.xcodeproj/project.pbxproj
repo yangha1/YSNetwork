@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0CFC08FFE76F76E2C0D5332A /* Pods-YSNetworkDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSNetworkDemo_Example.debug.xcconfig"; path = "Target Support Files/Pods-YSNetworkDemo_Example/Pods-YSNetworkDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0DF8E648625E084BE64E18D9 /* Pods-YSNetworkDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSNetworkDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-YSNetworkDemo_Example/Pods-YSNetworkDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5B97B4248893ACDBA15EA074 /* YSNetworkDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YSNetworkDemo.podspec; path = ../YSNetworkDemo.podspec; sourceTree = "<group>"; };
+		5B97B4248893ACDBA15EA074 /* YSNetworkDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YSNetworkDemo.podspec; path = ../YSNetworkDemo.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YSNetworkDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSNetworkDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +62,10 @@
 		61A8BF3EB93840234F5980E4 /* libPods-YSNetworkDemo_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSNetworkDemo_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8F49C58A75EB17CE97C33340 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8F49C58A75EB17CE97C33340 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		983AE8CD9BE7C65C880C073B /* Pods-YSNetworkDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSNetworkDemo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YSNetworkDemo_Tests/Pods-YSNetworkDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E90377DA4BD8BA89A3FAE506 /* Pods-YSNetworkDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSNetworkDemo_Tests.release.xcconfig"; path = "Target Support Files/Pods-YSNetworkDemo_Tests/Pods-YSNetworkDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F652FC768881A4D6FE2F2AC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F652FC768881A4D6FE2F2AC2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F7FEA40CDE47EA673DC8850D /* libPods-YSNetworkDemo_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YSNetworkDemo_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				983AE8CD9BE7C65C880C073B /* Pods-YSNetworkDemo_Tests.debug.xcconfig */,
 				E90377DA4BD8BA89A3FAE506 /* Pods-YSNetworkDemo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				769B57CAED6608D02131AA22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -315,24 +314,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		769B57CAED6608D02131AA22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YSNetworkDemo_Example/Pods-YSNetworkDemo_Example-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/YSNetworkDemo/YSNetworkDemo.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YSNetworkDemo.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YSNetworkDemo_Example/Pods-YSNetworkDemo_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8A8A263C33354DE8E8A51601 /* [CP] Check Pods Manifest.lock */ = {
