@@ -1,0 +1,6 @@
+module Pods_YSNetworkDemo_Tests {
+  umbrella header "Pods-YSNetworkDemo_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

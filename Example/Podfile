@@ -1,13 +1,11 @@
-use_frameworks!
-
 platform :ios, '8.0'
 
-target 'YSNetwork_Example' do
-  pod 'YSNetwork', :path => '../'
+target 'YSNetworkDemo_Example' do
+  pod 'YSNetworkDemo', :path => '../'
 
-  target 'YSNetwork_Tests' do
+  target 'YSNetworkDemo_Tests' do
     inherit! :search_paths
 
-    
+    pod 'FBSnapshotTestCase'
   end
 end
